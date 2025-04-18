@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur de Pourboire</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Calculateur de Pourboire</h1>
+    <div class="formulaire">
+        <label>Montant de l’addition (DH) :
+        <input type="number" id="montant" placeholder="Ex: 115.22" />
+        <span class="erreur" id="erreurMontant"></span>
+        </label>
+
+        <label>Nombre de personnes :
+        <input type="number" id="personnes" placeholder="Ex: 3" />
+        <span class="erreur" id="erreurPersonnes"></span>
+        </label>
+
+        <div class="boutons">
+        <button onclick="calculerPourboire5()">5%</button>
+        <button onclick="calculerPourboire10()">10%</button>
+        <button onclick="calculerPourboire15()">15%</button>
+        <button onclick="calculerPourboire25()">25%</button>
+        <button onclick="calculerPourboire50()">50%</button>
+        </div>
+    </div>
+
+    <div class="resultats">
+        <h2>Résultats</h2>
+        <p>Total du pourboire : <span id="totalPourboire">0.00 DH</span></p>
+        <p>Pourboire par personne : <span id="pourboireParPersonne">0.00 DH</span></p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
